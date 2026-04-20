@@ -15,7 +15,7 @@ import Register from './pages/Register';
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/SkillSwap">
       <AuthProvider>
         <AppProvider>
           <Navbar />
@@ -23,7 +23,7 @@ export default function App() {
             <Route path="/" element={<Landing />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
-            
+
             <Route path="/dashboard" element={
               <ProtectedRoute>
                 <Dashboard />
