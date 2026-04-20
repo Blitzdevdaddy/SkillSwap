@@ -8,3 +8,6 @@ createRoot(document.getElementById('root')).render(
     <App />
   </StrictMode>,
 )
+
+
+console.log("Supabase URL Check:", import.meta.env.VITE_SUPABASE_URL);
